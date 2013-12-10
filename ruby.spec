@@ -11,7 +11,7 @@
 # QA_RPATHS=$[ 0x0001|0x0010 ]rpmbuild -bb ~/rpmbuild/SPECS/ruby.spec
 
 %define rubyver         2.0.0
-%define rubyminorver    p247
+%define rubyminorver    p353
 
 Name:           ruby
 Version:        %{rubyver}_%{rubyminorver}
@@ -75,6 +75,8 @@ rm -rf $RPM_BUILD_ROOT
 %{_libdir}
 
 %changelog
+* Tue Dec 10 2013 Paul O'Connor <paul@poconnor.me> - 2.0.0-p353
+- Bumped 2.0.0-p353
 * Fri Jun 28 2013 Nathan Milford <nathan@milford.io> - 2.0.0-p247
 - Bumped 2.0.0-p247.
 * Sun Feb 24 2013 Nathan Milford <nathan@milford.io> - 2.0.0-p0
